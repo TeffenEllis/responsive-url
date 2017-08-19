@@ -1,19 +1,19 @@
-var makeResponsiveURLs = function (node) {
+function makeResponsiveURLs (node) {
   var url = node.getAttribute('data-url')
   var newURL = url
   var maxLength = url.length
   var width = node.clientWidth
-  var rightPadding = parseInt(getComputedStyle(node).paddingRight, 10)
+  var rightPadding = parseInt(window.getComputedStyle(node).paddingRight, 10)
 
   node.textContent = url
   while (node.scrollWidth - rightPadding > width) {
     maxLength -= 1
-    newURL = ResponsiveURL.init(url, maxLength)
+    newURL = window.ResponsiveURL.truncateURL(url, maxLength)
     node.textContent = newURL
   }
 }
 
-var throttle = function (fn, timeout) {
+function throttle (fn, timeout) {
   return function throttledFn () {
     if (!throttledFn.timer) {
       var args = arguments
@@ -28,7 +28,7 @@ var throttle = function (fn, timeout) {
   }
 }
 
-var init = function () {
+function init () {
   document.querySelectorAll('div[data-url]').forEach(function (div) {
     makeResponsiveURLs(div)
   })
