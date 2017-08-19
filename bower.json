@@ -1,0 +1,17 @@
+{
+  "name": "responsive-url",
+  "description": "Intelligently resize URLs",
+  "main": "index.js",
+  "authors": [
+    "Cloudflare Inc."
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CloudflareApps/ResponsiveURL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
