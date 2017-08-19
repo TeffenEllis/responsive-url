@@ -1,0 +1,25 @@
+{
+  "name": "responsive-url",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "standard --fix ./**/*.js ./*.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudflareApps/ResponsiveURL.git"
+  },
+  "author": "Cloudflare Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CloudflareApps/ResponsiveURL/issues"
+  },
+  "homepage": "https://github.com/CloudflareApps/ResponsiveURL#readme",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
